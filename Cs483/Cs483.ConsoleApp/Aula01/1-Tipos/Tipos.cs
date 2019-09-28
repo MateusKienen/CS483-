@@ -18,7 +18,7 @@ namespace Cs483.ConsoleApp.Aula01._1___Tipos
             ExibeTiposPorValor();
         }
 
-        private static void ExibeCervejas()
+        public void ExibeCervejas()
         {
             Beer b = new Beer();
             b.Graduacao = "18%";
@@ -37,7 +37,7 @@ namespace Cs483.ConsoleApp.Aula01._1___Tipos
             b.Graduacao = "50%";
             b.Cor = "Escura";
             b.IBU = 25;
-            Console.WriteLine($"Beer : {b.ToString()}");
+            Console.WriteLine($"Beer1 : {b.ToString()}");
             Console.WriteLine($"Beer2 : {b2.ToString()}");
         }
 

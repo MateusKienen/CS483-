@@ -47,16 +47,16 @@
     <Compile Include="Aula01\1-Tipos\Tipos.cs" />
     <Compile Include="Aula01\2-TiposInteiros\TiposInteiros.cs" />
     <Compile Include="Aula01\3-PontoFlutuante\PontoFlutuante.cs" />
+    <Compile Include="Aula01\4-Booleano\Booleano.cs" />
+    <Compile Include="Aula01\5-Structs\BeerS.cs" />
+    <Compile Include="Aula01\5-Structs\Structs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Aula01\4-Booleano\" />
-    <Folder Include="Aula01\5-Structs\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Aula01\Explicações da aula.txt" />
   </ItemGroup>

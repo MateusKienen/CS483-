@@ -1,6 +1,8 @@
 ﻿using Cs483.ConsoleApp.Aula01._1___Tipos;
 using Cs483.ConsoleApp.Aula01._2_TiposInteiros;
 using Cs483.ConsoleApp.Aula01._3_PontoFlutuante;
+using Cs483.ConsoleApp.Aula01._4_Booleano;
+using Cs483.ConsoleApp.Aula01._5_Structs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +26,8 @@ namespace Cs483.ConsoleApp
                 Tipos tipos = new Tipos();
                 TiposInteiros tiposInteiros = new TiposInteiros();
                 PontoFlutuante pontoFlutuante = new PontoFlutuante();
-                
+                Booleano booleano = new Booleano();
+                Structs structs = new Structs();
                 switch (opcao)
                 {
                     case 1:
@@ -35,6 +38,12 @@ namespace Cs483.ConsoleApp
                         break;
                     case 3:
                         pontoFlutuante.Executa();
+                        break;
+                    case 4:
+                        booleano.Executa();
+                        break;
+                    case 5:
+                        structs.Executa();
                         break;
                     default:
                         break;
