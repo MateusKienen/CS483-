@@ -24,7 +24,7 @@ namespace Cs483.ConsoleApp.Aula2._1_Classes
             this._velocidade += 10;
         }
 
-        public abstract int A();
+       // public abstract int A();
 
         void IVeiculos.Locomover()
         {
