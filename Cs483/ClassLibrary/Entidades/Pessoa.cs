@@ -1,5 +1,4 @@
-﻿using ClassLibrary.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +9,7 @@ namespace ClassLibrary.Entidades
     public abstract class Pessoa : EntidadeBase
     {
         public string Nome { get; set; }
+        public string Email { get; set; }
 
-        public List<Pessoa> Lista { get; set; }
-
-        public abstract List<Pessoa> ListaPessoas();
     }
 }

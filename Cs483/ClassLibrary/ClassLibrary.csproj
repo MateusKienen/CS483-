@@ -46,7 +46,6 @@
     <Compile Include="Entidades\Pessoa.cs" />
     <Compile Include="Entidades\PessoaFisica.cs" />
     <Compile Include="Entidades\PessoaJuridica.cs" />
-    <Compile Include="Interfaces\ICrud.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

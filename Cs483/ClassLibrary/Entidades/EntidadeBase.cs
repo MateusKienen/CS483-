@@ -8,8 +8,8 @@ namespace ClassLibrary.Entidades
 {
     public abstract class EntidadeBase
     {
-        #region
+
         public int Id { get; set; }
-        #endregion
+
     }
 }

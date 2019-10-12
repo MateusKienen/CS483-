@@ -13,10 +13,10 @@ namespace Cs483.ConsoleApp.Aula2._1_Classes
         public void VelecidadeMedia()
         {
         }
-        public override int A()
-        {
-            return 10;
-        }
+        //public override int A()
+        //{
+        //    return 10;
+        //}
         public override int Locomover()
         {
             

@@ -11,7 +11,7 @@ namespace Cs483.ConsoleApp.Aula1._6_Enum
         public void Executa()
         {
             Console.WriteLine("Enuns");
-            DiasDaSemana mtDt =  DiasDaSemana.Segunda | DiasDaSemana.Terca | DiasDaSemana.Quarta;
+            DiasDaSemana mtDt =  DiasDaSemana.Segunda | DiasDaSemana.Quarta;
             Console.WriteLine(mtDt);
         }
 
