@@ -52,45 +52,50 @@
             this.cbTipoPessoa.Items.AddRange(new object[] {
             "F",
             "J"});
-            this.cbTipoPessoa.Location = new System.Drawing.Point(42, 25);
+            this.cbTipoPessoa.Location = new System.Drawing.Point(32, 20);
+            this.cbTipoPessoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbTipoPessoa.Name = "cbTipoPessoa";
-            this.cbTipoPessoa.Size = new System.Drawing.Size(52, 30);
+            this.cbTipoPessoa.Size = new System.Drawing.Size(40, 27);
             this.cbTipoPessoa.TabIndex = 2;
             this.cbTipoPessoa.SelectedIndexChanged += new System.EventHandler(this.CbTipoPessoa_SelectedIndexChanged);
             // 
             // txtCpfCnpj
             // 
             this.txtCpfCnpj.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpfCnpj.Location = new System.Drawing.Point(111, 25);
+            this.txtCpfCnpj.Location = new System.Drawing.Point(83, 20);
+            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCpfCnpj.Mask = "000.000.000-00";
             this.txtCpfCnpj.Name = "txtCpfCnpj";
-            this.txtCpfCnpj.Size = new System.Drawing.Size(213, 30);
+            this.txtCpfCnpj.Size = new System.Drawing.Size(161, 26);
             this.txtCpfCnpj.TabIndex = 3;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(111, 180);
+            this.txtEmail.Location = new System.Drawing.Point(83, 146);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(448, 30);
+            this.txtEmail.Size = new System.Drawing.Size(337, 26);
             this.txtEmail.TabIndex = 7;
             this.txtEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             // 
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(111, 79);
+            this.txtNome.Location = new System.Drawing.Point(83, 64);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(448, 30);
+            this.txtNome.Size = new System.Drawing.Size(337, 26);
             this.txtNome.TabIndex = 6;
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(33, 183);
+            this.lbEmail.Location = new System.Drawing.Point(25, 149);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(58, 22);
+            this.lbEmail.Size = new System.Drawing.Size(47, 19);
             this.lbEmail.TabIndex = 5;
             this.lbEmail.Text = "E-mail";
             this.lbEmail.Click += new System.EventHandler(this.LbEmail_Click);
@@ -99,18 +104,20 @@
             // 
             this.lbNome.AutoSize = true;
             this.lbNome.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(33, 79);
+            this.lbNome.Location = new System.Drawing.Point(25, 64);
+            this.lbNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(57, 22);
+            this.lbNome.Size = new System.Drawing.Size(46, 19);
             this.lbNome.TabIndex = 4;
             this.lbNome.Text = "Nome";
             // 
             // txtFantasia
             // 
             this.txtFantasia.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFantasia.Location = new System.Drawing.Point(142, 131);
+            this.txtFantasia.Location = new System.Drawing.Point(106, 106);
+            this.txtFantasia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFantasia.Name = "txtFantasia";
-            this.txtFantasia.Size = new System.Drawing.Size(417, 30);
+            this.txtFantasia.Size = new System.Drawing.Size(314, 26);
             this.txtFantasia.TabIndex = 9;
             this.txtFantasia.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
@@ -118,9 +125,10 @@
             // 
             this.lbNomeFantasia.AutoSize = true;
             this.lbNomeFantasia.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNomeFantasia.Location = new System.Drawing.Point(12, 134);
+            this.lbNomeFantasia.Location = new System.Drawing.Point(9, 109);
+            this.lbNomeFantasia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNomeFantasia.Name = "lbNomeFantasia";
-            this.lbNomeFantasia.Size = new System.Drawing.Size(124, 22);
+            this.lbNomeFantasia.Size = new System.Drawing.Size(100, 19);
             this.lbNomeFantasia.TabIndex = 8;
             this.lbNomeFantasia.Text = "Nome Fantasia";
             this.lbNomeFantasia.Click += new System.EventHandler(this.Label1_Click);
@@ -129,9 +137,10 @@
             // 
             this.btInserir.BackColor = System.Drawing.Color.LimeGreen;
             this.btInserir.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInserir.Location = new System.Drawing.Point(709, 232);
+            this.btInserir.Location = new System.Drawing.Point(532, 188);
+            this.btInserir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btInserir.Name = "btInserir";
-            this.btInserir.Size = new System.Drawing.Size(84, 81);
+            this.btInserir.Size = new System.Drawing.Size(63, 66);
             this.btInserir.TabIndex = 10;
             this.btInserir.Text = "Inserir";
             this.btInserir.UseVisualStyleBackColor = false;
@@ -141,20 +150,23 @@
             // 
             this.btCancelar.BackColor = System.Drawing.Color.Orange;
             this.btCancelar.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelar.Location = new System.Drawing.Point(619, 232);
+            this.btCancelar.Location = new System.Drawing.Point(464, 188);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(84, 81);
+            this.btCancelar.Size = new System.Drawing.Size(63, 66);
             this.btCancelar.TabIndex = 11;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = false;
+            this.btCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // btListar
             // 
             this.btListar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btListar.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btListar.Location = new System.Drawing.Point(529, 232);
+            this.btListar.Location = new System.Drawing.Point(397, 188);
+            this.btListar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btListar.Name = "btListar";
-            this.btListar.Size = new System.Drawing.Size(84, 81);
+            this.btListar.Size = new System.Drawing.Size(63, 66);
             this.btListar.TabIndex = 12;
             this.btListar.Text = "Listar";
             this.btListar.UseVisualStyleBackColor = false;
@@ -163,18 +175,19 @@
             // gdListas
             // 
             this.gdListas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gdListas.Location = new System.Drawing.Point(12, 319);
+            this.gdListas.Location = new System.Drawing.Point(9, 259);
+            this.gdListas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gdListas.Name = "gdListas";
             this.gdListas.RowHeadersWidth = 51;
             this.gdListas.RowTemplate.Height = 24;
-            this.gdListas.Size = new System.Drawing.Size(781, 290);
+            this.gdListas.Size = new System.Drawing.Size(586, 236);
             this.gdListas.TabIndex = 13;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 631);
+            this.ClientSize = new System.Drawing.Size(604, 513);
             this.Controls.Add(this.gdListas);
             this.Controls.Add(this.btListar);
             this.Controls.Add(this.btCancelar);
@@ -187,6 +200,7 @@
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.txtCpfCnpj);
             this.Controls.Add(this.cbTipoPessoa);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.gdListas)).EndInit();

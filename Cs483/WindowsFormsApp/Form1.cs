@@ -12,6 +12,7 @@ namespace WindowsFormsApp
         PessoaFisica pf;
         List<PessoaJuridica> ListaPj = new List<PessoaJuridica>();
         List<PessoaFisica> ListaPf = new List<PessoaFisica>();
+        List<object> Lista = new List<object>();
 
         public Form1()
         {
@@ -68,7 +69,7 @@ namespace WindowsFormsApp
                 pf.Nome = txtNome.Text;
                 pf.Email = txtEmail.Text;
                 pf.Id = id++;
-                ListaPf.Add(pf);
+                Lista.Add(pf);
             }
             else
             {
@@ -78,7 +79,7 @@ namespace WindowsFormsApp
                 pj.NomeFantasia = txtFantasia.Text;
                 pj.Email = txtEmail.Text;
                 pj.Id = id++;
-                ListaPj.Add(pj);
+                Lista.Add(pj);
             }
         }
 
@@ -98,10 +99,15 @@ namespace WindowsFormsApp
                 gdListas.Columns[1].Name = " CPF ";
                 gdListas.Columns[2].Name = " Nome ";
                 gdListas.Columns[3].Name = " E-mail ";
-                foreach (var item in ListaPf)
+                foreach (var item in Lista)
                 {
-                    string[] row = new string[] { item.Id.ToString(), item.CPF, item.Nome, item.Email };
-                    gdListas.Rows.Add(row);
+                    PessoaFisica pf = item as PessoaFisica;
+                    if (pf != null)
+                    {
+                        string[] row = new string[] { pf.Id.ToString(), pf.CPF, pf.Nome, pf.Email };
+                        gdListas.Rows.Add(row);
+
+                    }
                 }
             }
             else
@@ -112,12 +118,33 @@ namespace WindowsFormsApp
                 gdListas.Columns[2].Name = " Nome ";
                 gdListas.Columns[3].Name = " Nome Fantasia ";
                 gdListas.Columns[4].Name = " E-mail ";
-                foreach (var item in ListaPj)
+                foreach (var item in Lista)
                 {
-                    string[] row = new string[] { item.Id.ToString(), item.CNPJ, item.Nome, item.NomeFantasia, item.Email };
-                    gdListas.Rows.Add(row);
+                    PessoaJuridica pj = item as PessoaJuridica;
+                    if (pj != null)
+                    {
+                        string[] row = new string[] { pj.Id.ToString(), pj.CNPJ, pj.Nome, pj.NomeFantasia, pf.Email };
+                        gdListas.Rows.Add(row);
+
+                    }
                 }
             }
         }
+
+        private void BtCancelar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+
+        private void LimparCampos()
+        {
+            txtCpfCnpj.Clear();
+            txtEmail.Clear();
+            txtFantasia.Clear();
+            txtNome.Clear();
+            cbTipoPessoa.SelectedIndex = 0;
+            gdListas.Rows.Clear();
+        }
+
     }
 }

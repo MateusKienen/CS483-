@@ -10,11 +10,11 @@ namespace ClassLibrary.Entidades
     {
 
         public string CPF { get; set; }
-        List<PessoaFisica> ListaPf = new List<PessoaFisica>();
+
 
         public void Cadastrar(PessoaFisica item)
         {
-            ListaPf.Add(item);
+            //ListaPf.Add(item);
         }
 
     }

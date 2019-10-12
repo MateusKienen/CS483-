@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,36 +8,42 @@ using System.Threading.Tasks;
 namespace ConsoleApp
 {
     class Program
-    { 
-        interface IVeiculos
-        {
-            void Ligar();
-        }
+    {
 
-        class Carro : IVeiculos
+        public static void Main(string[] args)
         {
-            public int pneus;
-            public string cor;
+            List<object> lista = new List<object>();
+            PessoaFisica pessoa = new PessoaFisica();
 
-            public void Ligar()
+            pessoa.Nome = "Mateus KLienen";
+            pessoa.CPF = "08207696907";
+            pessoa.Id = 1;
+            pessoa.Email = "mkienen123@gmail.com";
+
+            PessoaJuridica pessoa2 = new PessoaJuridica();
+            pessoa2.Email = "Empresa@email.com.br";
+            pessoa2.Nome = "NomeEmpresa";
+            pessoa2.Id = 2;
+            pessoa2.CNPJ = "01011000/0001-12";
+
+            lista.Add(pessoa);
+            lista.Add(pessoa2);
+
+            foreach (var item in lista)
             {
-                Console.WriteLine("Veiculo ligando....");
-            }
+                if (item is PessoaFisica)
+                {
+                    Console.WriteLine($"PessoasFisicas: { ((PessoaFisica)item).Nome } -- { ((PessoaFisica)item).CPF } -- " +
+                        $"{ ((PessoaFisica)item).Email } ");
 
-            public override string ToString()
-            {
-                return $"{this.cor}-{this.pneus}";
-            }
-        }
+                } else if(item is PessoaJuridica)
+                {
+                    Console.WriteLine($"PessoasJuridicas: { ((PessoaJuridica)item).Nome } -- { ((PessoaJuridica)item).CNPJ }" +
+                        $"-- {((PessoaJuridica)item).Email}  ");
 
-        static void Main(string[] args)
-        {
-            Carro c2 = new Carro();
-            c2.cor = "Amarelo";
-            c2.pneus = 3;
-            c2.Ligar();
-            Console.WriteLine();
-            Console.ReadLine();
+                }
+            }
+            Console.ReadKey();
         }
     }
 }

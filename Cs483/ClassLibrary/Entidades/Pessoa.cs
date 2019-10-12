@@ -10,6 +10,6 @@ namespace ClassLibrary.Entidades
     {
         public string Nome { get; set; }
         public string Email { get; set; }
-
+        
     }
 }
